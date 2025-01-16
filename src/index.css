@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+}
+
+
+
+/**UTILITIES**/
+
+.container {
+    max-width: 600px;
+    margin: 20px 50px;
+}
+
+header {
+    background-color: #F8F9FA;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+
+    h1 {
+        margin: 0px;
+    }
+}
+
+button {
+    color: white;
+    background-color: #0D6EFD;
+    border-style: none;
+    border-radius: 5px;
+    padding: 8px 8px;
+    margin: 0px 10px 10px 0px;
+
+    &.active {
+        color: black;
+        background-color: #FFC107;
+    }
+}
+
+.card {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 8px;
+
+    h3 {
+        margin: 5px 0;
+    }
+}

@@ -39,12 +39,12 @@ button {
         background-color: #4D9A43;
 
         &.HTML {
-            color: white;
-            background-color: red;
+
+            background-color: #DD4B24;
         }
 
         &.CSS {
-            background-color: blue;
+            background-color: #254BDF;
         }
 
         &.JavaScript {

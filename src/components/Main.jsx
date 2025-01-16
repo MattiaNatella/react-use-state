@@ -5,12 +5,11 @@ import Card from "./partials/Card"
 
 const Main = () => {
 
-    const [selectedId, setSelectedId] = useState(1);
+    const [selectedId, setSelectedId] = useState(null);
 
     const handlerToggle = (id) => {
         setSelectedId(id)
     }
-
     return (
         <main>
             <div className="container">
@@ -18,7 +17,7 @@ const Main = () => {
                     <Button key={language.id} title={language.title} onToggle={() => handlerToggle(language.id)} isActive={language.id == selectedId} />
                 )}
             </div>
-            <Card languages={languages} cardId={selectedId} />
+            {selectedId ? <h3>Nessun Linguaggio Selezionato</h3> : <Card languages={languages} cardId={selectedId} />}
 
         </main >
 

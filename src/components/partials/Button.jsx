@@ -3,7 +3,7 @@ const Button = (props) => {
     const onToggle = props.onToggle
     const isActive = props.isActive
     return (
-        <button onClick={onToggle} className={isActive ? "active" : ""} key={id}>{title}</button>
+        <button onClick={onToggle} className={isActive ? `active ${title}` : ""} key={id}>{title}</button>
     )
 }
 

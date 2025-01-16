@@ -36,7 +36,28 @@ button {
 
     &.active {
         color: black;
-        background-color: #FFC107;
+        background-color: #4D9A43;
+
+        &.HTML {
+            color: white;
+            background-color: red;
+        }
+
+        &.CSS {
+            background-color: blue;
+        }
+
+        &.JavaScript {
+            background-color: #FFC107;
+        }
+
+        &.Express {
+            background-color: #EEEEEE;
+        }
+
+        &.ReactJS {
+            background-color: #5ED4F3;
+        }
     }
 }
 

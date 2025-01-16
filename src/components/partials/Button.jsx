@@ -1,7 +1,9 @@
 const Button = (props) => {
     const { id, title } = props
+    const onToggle = props.onToggle
+    const isActive = props.isActive
     return (
-        <button className="" key={id}>{title}</button>
+        <button onClick={onToggle} className={isActive ? "active" : ""} key={id}>{title}</button>
     )
 }
 

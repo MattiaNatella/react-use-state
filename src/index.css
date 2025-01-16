@@ -27,12 +27,19 @@ header {
 }
 
 button {
-    color: white;
-    background-color: #0D6EFD;
-    border-style: none;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
     border-radius: 5px;
     padding: 8px 8px;
     margin: 0px 10px 10px 0px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: blue;
+    }
+
+
 
     &.active {
         color: black;

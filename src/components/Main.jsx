@@ -2,6 +2,7 @@ import { useState } from "react"
 import languages from "../assets/languages"
 import Button from "./partials/Button"
 import Card from "./partials/Card"
+import ButtonsList from "./ButtonsList"
 
 const Main = () => {
 
@@ -13,11 +14,13 @@ const Main = () => {
     return (
         <main>
             <div className="container">
-                {languages.map(language =>
+
+                <ButtonsList languages={languages} handlerToggle={handlerToggle} selectedId={selectedId} />
+                {/* {languages.map(language =>
                     <Button key={language.id} title={language.title} onToggle={() => handlerToggle(language.id)} isActive={language.id == selectedId} />
-                )}
+                )} */}
             </div>
-            {selectedId ? <h3>Nessun Linguaggio Selezionato</h3> : <Card languages={languages} cardId={selectedId} />}
+            {selectedId ? <Card languages={languages} cardId={selectedId} /> : <h3>Nessun Linguaggio è stato Selezionato</h3>}
 
         </main >
 

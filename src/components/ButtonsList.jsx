@@ -1,10 +1,8 @@
 import React from 'react'
 import Button from './partials/Button';
 
-const ButtonsList = (props) => {
+const ButtonsList = ({ languages, handlerToggle, selectedId }) => {
 
-    const { languages, handlerToggle, selectedId } = props;
-    console.log(languages)
     return (
         <>
             {

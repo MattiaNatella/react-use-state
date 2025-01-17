@@ -1,6 +1,5 @@
 import { useState } from "react"
 import languages from "../assets/languages"
-import Button from "./partials/Button"
 import Card from "./partials/Card"
 import ButtonsList from "./ButtonsList"
 

@@ -1,6 +1,4 @@
-const Card = (props) => {
-
-    const { languages, cardId } = props;
+const Card = ({ languages, cardId }) => {
     return (
         <div className="card container">
             <h3 className={languages.find(language => language.id == cardId).title}>{languages.find(language => language.id == cardId).title}</h3>

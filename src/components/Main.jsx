@@ -20,7 +20,10 @@ const Main = () => {
                     <Button key={language.id} title={language.title} onToggle={() => handlerToggle(language.id)} isActive={language.id == selectedId} />
                 )} */}
             </div>
-            {selectedId ? <Card languages={languages} cardId={selectedId} /> : <h3>Nessun Linguaggio è stato Selezionato</h3>}
+            {selectedId ? <Card languages={languages} cardId={selectedId} /> : (
+                <div className="card container">
+                    <h3>Nessun Linguaggio selezionato</h3>
+                </div>)}
 
         </main >
 
